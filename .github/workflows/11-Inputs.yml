@@ -1,4 +1,4 @@
-name: 11 - woring with Inputs
+name: 11 - working with Inputs
 
 on: 
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     
       #input type-1
       dry-run:
-        types: boolean
+        type: boolean
         description: skip deployment and only print build output
         default: false
 
