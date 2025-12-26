@@ -4,20 +4,20 @@ on:
   workflow_dispatch:
     inputs:
     
-      #input type-1
       dry-run:
+        #input type-1
         type: boolean
         description: skip deployment and only print build output
         default: false
 
-      #input tpe-2
       target:
+        #input tpe-2
         type: environment
         required: true
         description: which environment the workflow will target
     
-      #input type-3
       tag:
+        #input type-3
         type: choice
         options:
           - v1
