@@ -10,7 +10,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: staging
         env:
-            my-envir-value: ${{ vars.MY_ENV_VALUE || 'defaultvalue' }}
+            my-envir-value: ${{ vars.MY_ENV_VALUE || 'default value' }}
         steps:
             - name: Echo vars
               run: |
@@ -33,8 +33,3 @@ jobs:
             - name: Echo vars
               run: |
                 echo "Deploying to prod"
-
-            # steps:
-            #     - name: Echo vars
-            #       run: |
-                    # echo "Env variable: ${{ env.my-envir-value }}"
