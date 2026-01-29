@@ -5,7 +5,7 @@ on:
 
 jobs:
     deploy:
-        uses: .github/workflows/18.1-reusable-workflow.yml 
+        uses: ./.github/workflows/18.1-reusable-workflow.yml 
         with:
             target-directory: dummy-dir
 
